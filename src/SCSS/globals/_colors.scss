@@ -1,0 +1,25 @@
+:root {
+  //base colors
+  --c-grey-900: hsl(217, 19%, 35%);
+  --c-grey-500: hsl(214, 17%, 51%);
+  --c-grey-400: hsl(212, 23%, 69%);
+  --c-grey-200: hsl(210, 46%, 95%);
+  --c-white: hsl(0, 0%, 100%);
+
+  //used colors
+  --color-main-bg: var(--c-grey-200);
+
+  --color-article: var(--c-white);
+  --color-article-main-header-title: var(--c-grey-900);
+  --color-article-main-header-text: var(--c-grey-500);
+  --color-article-main-footer-author-nameDate-name: var(--c-grey-900);
+  --color-article-main-footer-author-nameDate-date: var(--c-grey-400);
+  --color-article__main--footer-popupButton-bg: var(--c-grey-200);
+
+  --color-popup-bg: var(--c-grey-900);
+  --color-popup-text: var(--c-grey-400);
+  --color-popup-button-bg: var(--c-grey-500);
+  --color-popup-button-arrow: var(--c-white);
+
+
+}

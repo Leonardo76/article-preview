@@ -1,0 +1,28 @@
+@use '../../SCSS/layout/screen-size' as *;
+@use '../../SCSS/utils/functions' as *;
+@use '../../SCSS/utils/mixins' as *;
+
+.popupMobile {
+  @include popupContainer;
+  justify-content: space-between;
+  width: 100%;
+  height: calcRem(76);
+
+  @include content;
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-popup-button-bg);
+    width: calcRem(32);
+    height: calcRem(32);
+    border-radius: 100%;
+    margin-inline-start: calcRem(40);
+
+    &-image {
+      fill: var(--color-popup-button-arrow);
+    }
+  }
+}
+

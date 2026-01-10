@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/manrope-v20-latin-regular.woff2") format('woff2');
+}
+/* manrope-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    src: url('assets/fonts/manrope-v20-latin-500.woff2') format('woff2');
+}
+/* manrope-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/manrope-v20-latin-700.woff2') format('woff2');
+}
+
+  :root {
+      --font: 'Manrope';
+
+      --fs-20: 20px;
+      --fs-13: 13px;
+
+      --fw-normal: 400;
+      --fw-medium: 500;
+      --fw-bold: 700;
+  }

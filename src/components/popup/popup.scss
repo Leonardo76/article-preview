@@ -1,0 +1,26 @@
+@use '../../SCSS/utils/functions' as *;
+@use '../../SCSS/utils/mixins' as *;
+
+.popup {
+  @include popupContainer;
+  justify-content: center;
+  width: calcRem(248);
+  height: calcRem(55);
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 0 rgba(201, 213, 225, 50%);
+
+  @include content;
+
+  ::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-top: 12px solid var(--color-popup-bg);
+    position: absolute;
+    left: calc(50% - 12px);
+    top: 100%;
+  }
+}
+

@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+.centerArticle {
+    min-width: 20.4375rem;
+    /*article width: mobile 327px, tablet 608px, desktop 730px*/
+    width: clamp(20.4375rem, calc(3.679375rem + 71.501vw), 38rem);
+
+    /*article height: mobile 538px, tablet 346px, desktop 280px*/
+    height: calc(538 / 16 * 1rem);
+
+    margin-block-start: calc(50vh - 538 / 32 * 1rem);
+    margin-inline: calc(50vw - clamp(20.4375rem, calc(3.679375rem + 71.501vw), 38rem) / 2);
+
+    /*375, 768, 1440*/
+    @media (min-width: calc(768 / 16 * 1rem)) {
+        width: clamp(38rem, calc(29.286rem + 18.155vw), 45.625rem);
+        height: calc(346 / 16 * 1rem);
+        margin-block-start: calc(50vh - 346 / 32 * 1rem);
+        margin-inline: calc(50vw - clamp(38rem, calc(29.286rem + 18.155vw), 45.625rem) / 2);
+    }
+
+    @media (min-width: calc(1440 / 16 * 1rem)) {
+        width: 45.625rem;
+        height: calc(280 / 16 * 1rem);
+        margin-block-start: calc(50vh - 280 / 32 * 1rem);
+    }
+}

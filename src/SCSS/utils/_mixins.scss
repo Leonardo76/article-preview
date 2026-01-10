@@ -1,0 +1,36 @@
+@use '../../SCSS/utils/functions' as *;
+
+@mixin popupContainer {
+  display: flex;
+  align-items: center;
+  padding-inline: calcRem(30);
+  position: absolute;
+  left: 0;
+  background-color: var(--color-popup-bg);
+}
+
+@mixin content {
+  &__content {
+    display: flex;
+    gap: calcRem(24);
+
+    &-text {
+      display: block;
+      color: var(--color-popup-text);
+      font-size: var(--font-size-popup-text);
+      font-weight: var(--font-weight-popup-text);
+      line-height: 1.4;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+
+    &-icons {
+      display: flex;
+      gap: calcRem(16);
+
+      &-icon {
+        display: block;
+      }
+    }
+  }
+}
