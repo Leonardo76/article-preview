@@ -3,6 +3,8 @@ import "./article.css";
 import PopupMobile from "../popupMobile/PopupMobile.tsx";
 import {useEffect, useRef, useState} from "react";
 import Popup from "../popup/Popup.tsx";
+import imageDrawers from "/src/assets/images/drawers.jpg";
+import imageMichelle from "/src/assets/images/avatar-michelle.jpg"
 
 function Article() {
     //popup is visible or not
@@ -85,7 +87,7 @@ function Article() {
         <>
             <article className="article">
                 <img className="article__img"
-                     src="/src/assets/images/drawers.jpg"
+                     src={imageDrawers}
                      alt="Image with furniture and a vase"/>
                 <main className="article__main">
                     <header className="article__main--header">
@@ -102,7 +104,7 @@ function Article() {
                     <footer className="article__main--footer">
                         <section className="article__main--footer-author">
                             <img className="article__main--footer-author-image"
-                                 src="/src/assets/images/avatar-michelle.jpg" alt="Image of Michelle Appleton"
+                                 src={imageMichelle} alt="Image of Michelle Appleton"
                                  width={"40px"}
                                  height={"40px"}/>
                             <div className="article__main--footer-author-nameDate">
