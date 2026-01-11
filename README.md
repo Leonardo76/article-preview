@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Leonardo76/article-preview.git](https://github.com/Leonardo76/article-preview.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://article-previewfm.netlify.app](https://article-previewfm.netlify.app)
 
 ## My process
 
